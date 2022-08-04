@@ -11,8 +11,6 @@ instances = [item.lstrip(' \n') for item in instances.copy()]
 
 del instances[-1]
 
-print(' '.join(instances))
-
 if sys.argv[1] == 'start':
     subprocess.run(shlex.split(f"""aws ec2 start-instances --instance-ids {' '.join(instances)}"""))
 elif sys.argv[1] == 'stop':
