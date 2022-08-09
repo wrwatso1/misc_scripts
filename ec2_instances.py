@@ -1,4 +1,4 @@
-#!/Users/wrwatso1/.pyenv/shims/python
+#!/usr/bin/env python
 
 import subprocess
 from copy import copy
